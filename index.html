@@ -21,54 +21,120 @@
     />
 
     <!-- Implement font awesome -->
-    <script src="https://kit.fontawesome.com/f8c41aacfe.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/f8c41aacfe.js"
+      crossorigin="anonymous"
+    ></script>
 
     <style>
-    .fontLato{
-        font-family: 'Lato', sans-serif;
-    }
+      .fontLato {
+        font-family: "Lato", sans-serif;
+      }
     </style>
 
     <title>Fruit Brust Home page</title>
   </head>
 
   <body>
-    <header class="container border-4 border-red-600 mx-auto">
-      <h1>Mehei Rony</h1>
+    <header class="container mx-auto border-4 border-red-500">
+      <!-- Start the navBar -->
+      <nav>
+        <div class="navbar bg-[#F85559] mb-14  mx-auto text-center">
+          <div class="navbar-start">
+            <!-- Start the nav manu -->
+            <div class="hidden lg:block ">
+                <div class="flex list-none gap-5 text-white text-lg ">
+                    <li><a>Home</a></li>
+                    <li><a>About Us</a></li>
+                    <li><a>Shop</a></li>
+                    <li><a>All Fruits</a></li>
+                </div>
+            </div>
+            <!-- End of the nav manu -->
+            
+          </div>
+          <div class="navbar-center">
+            <div class="flex items-center gap-4">
+              <img src="./images/logo.png" alt="" />
+              <a><h1 class="font-black text-4xl text-white">Fruit Burst</h1></a>
+            </div>
+          </div>
+          <div class="navbar-end">
+            <!-- <input type="text" placeholder="Type here" class="input input-bordered w-full max-w-xs" /> -->
+            <div class="hidden lg:block">
+                <div class="flex items-center px-4 gap-4 ">
+                    <input type="text" placeholder="Type here" class="input  w-full max-w-xs" /> 
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+            </div>
+            
+            <!-- custom dropdown manu -->
+            <div class="dropdown">
+              <label tabindex="0" class="btn btn-ghost btn-circle lg:hidden">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h16M4 18h7"
+                  />
+                </svg>
+              </label>
+              <ul
+                tabindex="0"
+                class="menu menu-sm dropdown-content mt-3 z-[1] lg:p-2 shadow bg-base-100 rounded-box w-52"
+              >
+                <li><a>Homepage</a></li>
+                <li><a>Portfolio</a></li>
+                <li><a>About</a></li>
+              </ul>
+            </div>
+
+            <!-- End the custom dropdown manu -->
+          </div>
+        </div>
+      </nav>
+      <!-- End the navBar -->
     </header>
 
     <main></main>
 
-<!-- Start the footer secton  -->
-<footer class="footer footer-center p-5 lg:p-16 bg-black text-primary-content">
-    <div>
+    <!-- Start the footer secton  -->
+    <footer
+      class="footer footer-center p-5 lg:p-16 bg-black text-primary-content"
+    >
+      <div>
         <div class="flex items-center gap-4">
-            <img src="./images/logo.png" alt="">
-            <h1 class="font-black text-4xl">Fruit Burst</h1>
+          <img src="./images/logo.png" alt="" />
+          <h1 class="font-black text-4xl text-white">Fruit Burst</h1>
         </div>
-        <div class="grid lg:grid-flow-col grid-cols-3 gap-4 mt-6 justify-center">
-            <a class="link link-hover">Home</a> 
-            <a class="link link-hover">About Us</a> 
-            <a class="link link-hover">Shop</a> 
-            <a class="link link-hover">All Fruits</a>
-            <a class="link link-hover">Support</a>
-            <a class="link link-hover">My Account</a>
-          </div> 
-    </div> 
-    <div>
-      <div class="grid grid-flow-col gap-4 p-6 ">
-        <i class="fa-brands fa-twitter fa-xl" style="color: #ffffff;"></i>
-        <i class="fa-brands fa-facebook fa-xl" style="color: #2064d9;"></i>
-        <i class="fa-brands fa-youtube fa-xl" style="color: #ed0c0c;"></i>
-        <i class="fa-brands fa-linkedin-in fa-xl" style="color: #ffffff;"></i>
-        <i class="fa-brands fa-instagram fa-xl" style="color: #ffffff;"></i>
-        <i class="fa-brands fa-apple fa-xl" style="color: #ffffff;"></i>
-
-
-        
+        <div
+          class="grid lg:grid-flow-col grid-cols-3 gap-4 mt-6 justify-center"
+        >
+          <a class="link link-hover">Home</a>
+          <a class="link link-hover">About Us</a>
+          <a class="link link-hover">Shop</a>
+          <a class="link link-hover">All Fruits</a>
+          <a class="link link-hover">Support</a>
+          <a class="link link-hover">My Account</a>
+        </div>
       </div>
-    </div>
-  </footer>
-
+      <div>
+        <div class="grid grid-flow-col gap-4 p-6">
+          <i class="fa-brands fa-twitter fa-xl" style="color: #ffffff"></i>
+          <i class="fa-brands fa-facebook fa-xl" style="color: #2064d9"></i>
+          <i class="fa-brands fa-youtube fa-xl" style="color: #ed0c0c"></i>
+          <i class="fa-brands fa-linkedin-in fa-xl" style="color: #ffffff"></i>
+          <i class="fa-brands fa-instagram fa-xl" style="color: #ffffff"></i>
+          <i class="fa-brands fa-apple fa-xl" style="color: #ffffff"></i>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
