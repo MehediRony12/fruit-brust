@@ -42,7 +42,7 @@
         <div
           class="navbar bg-[#F85559] mb-14 mx-auto text-center rounded-full mt-2"
         >
-          <div class="navbar-start">
+          <div class="navbar-start ml-12">
             <!-- Start the nav manu -->
             <div class="hidden lg:block">
               <div class="flex list-none gap-5 text-white text-lg">
@@ -62,18 +62,19 @@
           </div>
           <div class="navbar-end">
             <div class="hidden lg:block">
-              <div class="flex items-center px-4 gap-4">
+              <div class="flex items-center px-4 text-center rounded-xl bg-white mr-6">
                 <input
                   type="text"
-                  placeholder="Type here"
-                  class="input w-full max-w-xs"
+                  placeholder="Search here"
+                  class="input w-full max-w-xs rounded-none border-none"
                 />
-                <i class="fa-solid fa-magnifying-glass"></i>
+                <i class="fa-solid fa-magnifying-glass fa-2xl bg-white w-10 h-10 p-4 "></i>
               </div>
             </div>
 
             <!-- custom dropdown manu -->
-            <div class="dropdown">
+
+            <div class="dropdown relative">
               <label tabindex="0" class="btn btn-ghost btn-circle lg:hidden">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -90,15 +91,13 @@
                   />
                 </svg>
               </label>
-              <ul
-                tabindex="0"
-                class="menu menu-sm dropdown-content mt-3 z-[1] lg:p-2 shadow bg-base-100 rounded-box"
-              >
+              <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] lg:p-2 shadow bg-base-100 rounded-box left-0">
                 <li><a>Homepage</a></li>
                 <li><a>Portfolio</a></li>
                 <li><a>About</a></li>
               </ul>
             </div>
+            
 
             <!-- End the custom dropdown manu -->
           </div>
@@ -256,13 +255,13 @@
           <!-- 1 -->
           <div class="mx-auto text-current">
             <img src="./images/fruit2.png" alt="" />
-            <p class="text-center">Strawberry</p>
+            <p class="text-center">Orange</p>
           </div>
 
           <!-- 1 -->
           <div class="mx-auto text-current">
             <img src="./images/fruit3.png" alt="" />
-            <p class="text-center">Strawberry</p>
+            <p class="text-center">Mango </p>
           </div>
 
           <!-- 1 -->
@@ -274,7 +273,7 @@
           <!-- 1 -->
           <div class="mx-auto text-current">
             <img src="./images/fruit5.png" alt="" />
-            <p class="text-center">Strawberry</p>
+            <p class="text-center">Mango</p>
           </div>
         </div>
       </section>
@@ -285,37 +284,37 @@
       <!-- deal section -->
       <div class="flex justify-between mt-32 p-10 flex-col lg:flex-row">
 
-        <div class="max-w-3xl">
-          <h1 class="text-5xl font-bold mb-4">Deal of the day</h1>
+        <div class="max-w-3xl text-center lg:text-left">
+          <h1 class="text-5xl font-bold mb-10 lg:mb-4">Deal of the day</h1>
           <p>Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
         </div>
 
         <!-- Countdown section  -->
         <div>
-          <div class="grid grid-flow-col gap-5 text-center auto-cols-max">
+          <div class="grid grid-flow-col gap-5 text-center auto-cols-max font-extrabold text-5xl my-9">
             <div class="flex flex-col">
               <span class="countdown font-mono text-5xl">
                 <span style="--value:15;"></span>
               </span>
-              days
+              <p class="font-light text-4xl">days</p>
             </div> 
             <div class="flex flex-col">
               <span class="countdown font-mono text-5xl">
                 <span style="--value:10;"></span>
               </span>
-              hours
+              <p class="font-light text-4xl">hours</p>
             </div> 
             <div class="flex flex-col">
               <span class="countdown font-mono text-5xl">
                 <span style="--value:24;"></span>
               </span>
-              min
+              <p class="font-light text-4xl">min</p>
             </div> 
             <div class="flex flex-col">
               <span class="countdown font-mono text-5xl">
                 <span style="--value:16;"></span>
               </span>
-              sec
+              <p class="font-light text-4xl">sec</p>
             </div>
           </div>
           <!-- End the countdown  -->
@@ -711,7 +710,7 @@
 
       <!-- Choose section -->
       <section>
-        <div class="text-center mb-12">
+        <div class="text-center ">
           <h1 class="text-4xl font-black mb-4">Why Choose Us</h1>
           <p>
             Contrary to popular belief, is not simply random text. It has roots
@@ -729,14 +728,14 @@
               <!-- card 1 -->
               <div class="flex gap-5">
                 <img
-                  class="bg-gray-500 rounded-full p-2 max-h-11"
+                  class="bg-gray-200 h-12 rounded-full p-2" 
                   src="./images/icon1.png"
                   alt=""
                 />
 
                 <div>
-                  <h4 class="text-2xl font-semibold">Dedicated Team</h4>
-                  <hr class="" />
+                  <h4 class="text-2xl font-semibold border-b-2 border-black">Dedicated Team</h4>
+                  
                   <p>
                     Professional employees are there for you to pick the most
                     amazing and fresh fruits.
@@ -744,16 +743,16 @@
                 </div>
               </div>
               <!-- card 2 -->
-              <div class="flex gap-5">
+              <div class="flex gap-5 ">
                 <img
-                  class="bg-gray-500 rounded-full p-2 max-h-11"
+                  class="bg-gray-200 h-12 rounded-full p-2"
                   src="./images/icon1.png"
                   alt=""
                 />
 
                 <div>
-                  <h4 class="border-b-2 text-2xl font-semibold">
-                    Dedicated Team
+                  <h4 class="border-b-2 text-2xl font-semibold border-b-2 border-black">
+                    Fresh is Best
                   </h4>
                   <p>
                     Professional employees are there for you to pick the most
@@ -764,14 +763,14 @@
               <!-- card 3 -->
               <div class="flex gap-5">
                 <img
-                  class="bg-gray-500 rounded-full p-2 max-h-11"
+                class="bg-gray-200 h-12 rounded-full p-2" 
                   src="./images/icon1.png"
                   alt=""
                 />
 
                 <div>
-                  <h4 class="border-b-2 text-2xl font-semibold">
-                    Dedicated Team
+                  <h4 class="border-b-2 text-2xl font-semibold border-b-2 border-black">
+                    Gift Certificates
                   </h4>
                   <p>
                     Professional employees are there for you to pick the most
@@ -781,7 +780,7 @@
               </div>
             </div>
 
-            <div>
+            <div class="">
               <img src="./images/whychoose1.png" alt="" />
             </div>
           </div>
@@ -792,13 +791,13 @@
             <!-- card 1 -->
             <div class="flex flex-row-reverse gap-5">
               <img
-                class="bg-gray-500 rounded-full p-2 max-h-11"
+              class="bg-gray-200 h-12 rounded-full p-2" 
                 src="./images/icon1.png"
                 alt=""
               />
 
               <div>
-                <h4 class="border-b-2 text-2xl font-semibold">
+                <h4 class="border-b-2 text-2xl font-semibold border-b-2 border-black">
                   Dedicated Team
                 </h4>
                 <p>
@@ -810,13 +809,13 @@
             <!-- card 2 -->
             <div class="flex flex-row-reverse gap-5">
               <img
-                class="bg-gray-500 rounded-full p-2 max-h-11"
+              class="bg-gray-200 h-12 rounded-full p-2" 
                 src="./images/icon1.png"
                 alt=""
               />
 
               <div>
-                <h4 class="border-b-2 text-2xl font-semibold">
+                <h4 class="border-b-2 text-2xl font-semibold border-b-2 border-black">
                   Dedicated Team
                 </h4>
                 <p>
@@ -828,13 +827,13 @@
             <!-- card 3 -->
             <div class="flex flex-row-reverse gap-5">
               <img
-                class="bg-gray-500 rounded-full p-2 max-h-11"
+              class="bg-gray-200 h-12 rounded-full p-2" 
                 src="./images/icon1.png"
                 alt=""
               />
 
               <div>
-                <h4 class="border-b-2 text-2xl font-semibold">
+                <h4 class="border-b-2 text-2xl font-semibold border-b-2 border-black">
                   Dedicated Team
                 </h4>
                 <p>
